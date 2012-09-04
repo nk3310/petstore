@@ -2,14 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.nk3310</groupId>
-	<artifactId>nk3310-project</artifactId>
-	<version>1.0.0.GA-SNAPSHOT</version>
-	<name>Nk3310 :: Project</name>
+	<parent>
+		<groupId>org.springside</groupId>
+		<artifactId>springside-parent</artifactId>
+		<version>4.0.0.GA-SNAPSHOT</version>
+		<relativePath>../modules/parent/</relativePath>
+	</parent>	
+	<groupId>org.nk3310.examples</groupId>
+	<artifactId>nk3310-examples</artifactId>
+	<name>Nk3310 :: Example</name>
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>modules</module>
-		<module>examples</module>
+		<module>petstore</module>
+		
 	</modules>
 </project>
